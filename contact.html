@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact S. Bros. Pharmacy | Williamsburg, Brooklyn</title>
+  <meta name="description" content="Contact S. Bros. Pharmacy in Williamsburg, Brooklyn for prescriptions, refills, delivery, product questions, and pharmacist support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-strip"></div>
+
+  <header class="site-header compact">
+    <a class="brand" href="index.html" aria-label="S. Bros. Pharmacy home">
+      <img src="assets/logo-banner.png" alt="S. Bros. Pharmacy logo" />
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#delivery">Delivery</a>
+      <a href="index.html#savings">Savings</a>
+      <a href="index.html#community">Community</a>
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero section-reveal">
+      <p class="eyebrow">Contact S. Bros. Pharmacy</p>
+      <h1>How can we help?</h1>
+      <p>Send a quick message about prescriptions, refills, delivery, product availability, savings, or pharmacist questions.</p>
+    </section>
+
+    <section class="contact-layout section-reveal">
+      <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e711dc27-c3af-4cd9-94e9-cb7efdc0c6b5">
+        <input type="hidden" name="subject" value="New Contact Form Submission - S. Bros. Pharmacy">
+        <input type="hidden" name="from_name" value="S. Bros. Pharmacy Website">
+        <input type="hidden" name="redirect" value="https://cfmeme.github.io/sbros-pharmacy/success.html">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" placeholder="Optional" />
+
+        <label for="topic">What do you need help with?</label>
+        <select id="topic" name="topic">
+          <option>Prescription refill</option>
+          <option>Free delivery</option>
+          <option>Medication question</option>
+          <option>Vaccination availability</option>
+          <option>Savings or rewards</option>
+          <option>Product availability</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="7" placeholder="Tell us what you need help with..." required></textarea>
+
+        <button class="button primary" type="submit">Send Message</button>
+        <p class="form-note">Your message will be sent directly to S. Bros. Pharmacy. Please do not include sensitive medical information in this form.</p>
+      </form>
+
+      <aside class="contact-card">
+        <h2>Store Information</h2>
+        <p><strong>S. Bros. Pharmacy</strong><br>176 Lee Ave<br>Brooklyn, NY 11211</p>
+        <p><strong>Phone:</strong><br><a href="tel:17188553070">(718) 855-3070</a></p>
+        <p><strong>Fax:</strong><br>718-596-4657</p>
+        <p><strong>Helpful note:</strong><br>Call ahead for prescription questions, delivery, vaccination availability, and holiday hours.</p>
+        <div class="mini-map"><iframe title="Map to S. Bros. Pharmacy" src="https://www.google.com/maps?q=176%20Lee%20Ave%2C%20Brooklyn%2C%20NY%2011211&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>S. Bros. Pharmacy</h3>
+      <p>176 Lee Ave, Brooklyn, NY 11211</p>
+      <p><a href="tel:17188553070">(718) 855-3070</a> • Fax: 718-596-4657</p>
+    </div>
+    <div class="footer-right">
+      <a href="index.html">Home</a>
+      <a href="index.html#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
